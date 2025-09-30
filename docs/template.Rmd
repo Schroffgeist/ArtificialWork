@@ -59,22 +59,22 @@ header-includes:
   - \newcommand{\GPSlocation}{`r params$gps_location`}
 params:
   # Title page metadata
-  assignment_title: "Título de la Asignación."
-  activity_type: "Tipo de actividad."
-  period: "Periodo lectivo."
-  subject_name: "Nombre de la Asignatura."
-  group_id: "id-Grupo."
-  classroom: "Salón asignado."
-  prof_name: "Nombre del Profesor."
-  assistant_name: "Nombre del ayudante."
-  student_name: "Nombre del estudiante."
-  student_id: "id-Alumno."
-  student_email1: "correo1@provedor.com"
-  student_email2: "correo2@provedor.com"
-  due_date: "día de la semana Número de Mes del Año. Hora límite."
-  gps_location: "Ciudad/País"
+  assignment_title: "Análisis del Temario de Desarrollo Económico y su Articulación Teórica"
+  activity_type: "Ensayo académico"
+  period: "2026-1"
+  subject_name: "Desarrollo Económico"
+  group_id: "NA"
+  classroom: "105D"
+  prof_name: "Michel Rojas R."
+  assistant_name: "Gisela Gonzalez"
+  student_name: "Alejandro Vladimir Gómez Sánchez"
+  student_id: "420036007"
+  student_email1: "geistschroff@gmail.com"
+  student_email2: ""
+  due_date: "3 de Octubre 2025, 3:00 am"
+  gps_location: "CDMX, México"
   # Header/Footer metadata
-  subject_fancy: "Nombre de la Asignatura abreviado."
+  subject_fancy: "Desarrollo Econ."
 encoding: UTF-8
 ---
 
@@ -153,21 +153,133 @@ knitr::knit_hooks$set(inline = divisa)
 ```
 # Introducción
 
-```{=latex}
-\lipsum[1-3]
-```
+El presente documento desarrolla un análisis académico estructurado del temario de la asignatura Desarrollo Económico (semestre 2026-1) con el propósito de articular sus contenidos en un marco conceptual coherente. Más allá de transcribir un listado temático, se busca: (i) situar históricamente el campo de la economía del desarrollo, (ii) justificar la secuencia pedagógica propuesta, y (iii) establecer los vínculos teóricos entre medición (ingreso, pobreza, desigualdad, desarrollo humano), crecimiento económico e instituciones. La metodología seguida es de análisis documental, apoyada en bibliografía canónica (Ray 2003; Todaro y Smith 2012; Jones 2000; Ros 2022; Acemoglu y Robinson 2012; Ravallion 2016; Atkinson 2016, 2019) y artículos clásicos (Solow 1957; Romer 1986). 
 
-# Desarrollo
+En términos epistemológicos, la economía del desarrollo ha transitado de enfoques estructuralistas y dualistas de posguerra a marcos neoclásicos y endógenos, incorporando progresivamente dimensiones sociales y de agencia institucional. Este desplazamiento justifica la inclusión secuencial de medición, teoría del crecimiento e instituciones, pues permite pasar de la descripción diagnóstica a la explicación causal y finalmente a la prescripción normativa.
 
-```{=latex}
-\lipsum[4-9]
-```
+# Estructura Analítica del Curso
 
-# Conclusión
+El diseño del curso responde a un principio de acumulación conceptual: primero se caracteriza el objeto (qué es desarrollo), luego se operacionaliza (cómo se mide), posteriormente se explican las trayectorias (modelos de crecimiento) y finalmente se incorpora el entramado institucional que condiciona resultados agregados y distributivos. Esta lógica evita reduccionismos como equiparar desarrollo únicamente con aumento del PIB per cápita.
 
-```{=latex}
-\lipsum[10-11]
-```
+A continuación se examina cada bloque temático enfatizando: (a) objetivos cognitivos, (b) preguntas guía, (c) enfoque metodológico dominante y (d) principales aportes bibliográficos.
+
+# I. Naturaleza y Evolución del Campo
+
+Objetivo: Delimitar la economía del desarrollo como subdisciplina y diferenciarla de la macroeconomía del crecimiento.
+
+Preguntas guía: ¿En qué se distingue la noción de desarrollo de la de crecimiento? ¿Cómo evolucionan las preocupaciones analíticas tras la Segunda Guerra Mundial? ¿Qué rol tienen fallas de mercado, estructuras productivas heterogéneas y dependencia externa?
+
+Síntesis conceptual: La economía del desarrollo emerge para explicar trampas de pobreza, dualismos estructurales (sector moderno vs. tradicional) y fallas coordinativas. La progresiva incorporación de modelos formales desplaza narrativas historicistas hacia análisis cuantitativos comparativos. La bibliografía de Ros (2022) y Ray (2003) permite contrastar enfoques institucionales y de acumulación de factores con visiones de productividad total de los factores.
+
+# II. Medición del Ingreso y Bienestar Material
+
+Objetivo: Comprender la lógica y limitaciones del ingreso como proxy de bienestar.
+
+Preguntas guía: ¿Por qué el PIB per cápita es condición necesaria pero no suficiente? ¿Cómo se comparan niveles reales entre países? ¿Qué rol cumplen PPA, series históricas y deflactores?
+
+Metodología dominante: Contabilidad nacional, comparaciones internacionales (Penn World Tables), descomposiciones de crecimiento.
+
+Discusión: El enfoque de Todaro y Smith (2012) enfatiza la multidimensionalidad incipiente, mientras que Jones (2000) provee la base para conectar niveles de ingreso con modelos de acumulación de capital y productividad.
+
+# III. Pobreza: Conceptualización y Medición
+
+Objetivo: Analizar los enfoques absolutos, relativos y multidimensionales de la pobreza.
+
+Preguntas guía: ¿Cómo se define una línea de pobreza? ¿Qué diferencia hay entre incidencia (headcount), brecha y severidad? ¿Qué tensiones existen entre medidas monetarias y enfoques de capacidades?
+
+Herramientas: Índices FGT, curvas de incidencia de crecimiento, microdatos de hogares.
+
+Aportes bibliográficos: Atkinson (2019) problematiza la comparabilidad global; Haughton y Khandker (2001) sistematizan herramientas empíricas; Ravallion (2016) contextualiza históricamente los umbrales; Ray (2003) vincula pobreza con teoría de trampas.
+
+# IV. Desigualdad: Estructura y Dinámica
+
+Objetivo: Comprender medidas y mecanismos de generación de desigualdad.
+
+Preguntas guía: ¿Qué diferencia a los índices de Gini, Theil y varianza de logaritmos? ¿Cómo se relaciona desigualdad con movilidad intergeneracional y eficiencia? ¿Qué implicaciones normativas surgen de distintos axiomas de equidad?
+
+Herramientas: Descomposición de Theil, curvas de Lorenz, descomposición de varianza, elasticidad de crecimiento pro-pobre.
+
+Aportes: Atkinson (2016) introduce el parámetro de aversión a la desigualdad; Ray (1998) ofrece modelos microfundados de distribución; Ravallion (2016) vincula desigualdad con reducción de pobreza condicionada al crecimiento.
+
+# V. Desarrollo Humano: Más Allá del Ingreso
+
+Objetivo: Justificar la expansión conceptual hacia capacidades y funcionamientos.
+
+Preguntas guía: ¿Cómo sintetiza el IDH dimensiones heterogéneas? ¿Qué críticas metodológicas recibe (sustituibilidad implícita, ponderaciones ad hoc)? ¿Cómo dialoga con la teoría de capacidades de Sen?
+
+Discusión: La incorporación de capital humano, salud y longevidad sirve de puente hacia modelos endógenos (Romer 1986) donde el conocimiento y la acumulación intangible son motores de crecimiento.
+
+# VI. Modelos de Crecimiento y Trayectorias del Desarrollo
+
+Objetivo: Entender la formalización del proceso de acumulación y progreso tecnológico.
+
+Núcleo teórico: Modelo Solow (1957) como benchmark de convergencia condicionada y contabilidad del crecimiento. Extensiones endógenas (Romer 1986) introducen rendimientos crecientes asociados al conocimiento y generan divergencia potencial.
+
+Preguntas guía: ¿Bajo qué supuestos emerge convergencia? ¿Qué fricciones impiden su materialización empírica? ¿Cómo se integran capital humano e innovación?
+
+Discusión: La comparación entre marcos exógenos y endógenos prepara el terreno para incorporar instituciones como parámetros sistémicos que modifican incentivos de acumulación e innovación.
+
+# VII. Instituciones y Desarrollo
+
+Objetivo: Evaluar el papel causal de las instituciones en las trayectorias de desarrollo.
+
+Conceptualización: Instituciones como reglas formales e informales que estructuran incentivos (Acemoglu y Robinson 2012). Distinción entre inclusivas y extractivas y su traducción a diferencias persistentes de productividad y distribución.
+
+Preguntas guía: ¿Cómo se identifican efectos causales (experimentos naturales, colonización, mortalidad de colonos)? ¿Qué riesgos de endogeneidad persisten? ¿Cómo dialogan instituciones con estructura sectorial y capital humano?
+
+Vínculos: Las instituciones median la eficacia de políticas redistributivas, la profundidad financiera y la acumulación tecnológica, cerrando el arco conceptual del curso.
+
+# Criterios de Evaluación
+
+Se mantiene la ponderación original: tres exámenes parciales (20%, 30%, 30%), tareas (10%) y asistencia mínima del 90% (10%). Desde una perspectiva de alineación constructiva, la secuencia evaluativa prioriza verificación incremental de comprensión (primer y segundo parcial) y síntesis integradora (tercer parcial). Las tareas fomentan aplicación técnica de mediciones y las lecturas críticas.
+
+# Conclusiones
+
+El temario analizado articula un tránsito pedagógico desde la definición del objeto de estudio hasta los determinantes institucionales de las trayectorias de desarrollo. Este encadenamiento evita reducciones simplistas y enfatiza la interacción entre distribución, acumulación y gobernanza. La inclusión conjunta de medición de pobreza, desigualdad y desarrollo humano previene interpretaciones unidimensionales del progreso. Los modelos de crecimiento sirven como andamiaje formal que, complementado por la economía política institucional, permite explicar divergencias persistentes. En conjunto, la estructura propuesta es coherente con estándares internacionales de programas de Economía del Desarrollo y facilita al estudiante construir un mapa analítico robusto.
+
+Trabajos futuros pueden profundizar en: (i) métodos causales modernos (diseños de regresión discontinua, variables instrumentales históricas), (ii) economía del cambio climático y desarrollo sostenible, y (iii) interacciones entre digitalización, productividad y desigualdad.
+
+# Referencias (selección citada en texto)
+
+Las referencias completas se listan en la sección de Bibliografía generada automáticamente.
+
+## Anexo. Temario Original del Curso
+A continuación se reproduce el temario original para referencia documental completa.
+
+### I. De qué trata el desarrollo económico y la economía del desarrollo.
+* Dutt y J. Ros (2008), International Handbook of Development Economics Vol. 1, Edward Elgar. Cap. 7.
+* Jones, Charles I (2000), Introducción al Crecimiento Económico, Prentice Hall. Cap. 1.
+* Ray, Debraj (2003), Economía del Desarrollo, Antoni Bosh. Introducción. Capítulo 2.
+* Ros, Jaime (2022), La riqueza de las naciones en el siglo XXI. Desarrollo económico, crecimiento e instituciones, FCE. Introducción y segunda parte.
+* Todaro, Michael P. y Stephen C. Smith (2012), Economic Development, Addison-Wesley. Caps. 1, 3.
+
+### II. Ingreso.
+* Todaro, Michael P. y Stephen C. Smith (2012), Economic Development, Addison-Wesley. Caps. 1, 3.
+
+### III. Pobreza.
+* Atkinson, Anthony B. (2019), Measuring Poverty Around the World, Princeton University Press.
+* Haughton, J. y Shahidur R. Khandker (2001), Handbook on Poverty and Inequality, The World Bank. Caps. 1 a 5.
+* Ray, Debraj (2003), Economía del Desarrollo, Antoni Bosh. Cap. 8.
+* Ravallion, Martin (2016), The Economics of Poverty, Oxford University Press. Caps. 4, 5, 7.
+
+### IV. Desigualdad.
+* Atkinson, Anthony B. (2016), Desigualdad. ¿Qué podemos hacer?, FCE.
+* Haughton, J. y Shahidur R. Khandker (2001), Handbook on Poverty and Inequality, The World Bank. Cap. 6.
+* Ray, Debraj (1998), Economía del Desarrollo, Antoni Bosh. Caps. 6 y 7.
+* Ravallion, Martin (2016), The Economics of Poverty, Oxford University Press. Caps. 5, 7.
+
+### V. Desarrollo humano.
+* Ray, Debraj (2003), Economía del Desarrollo, Antoni Bosh. Caps. 3, 4.
+
+### VI. Crecimiento.
+* Ray, Debraj (2003), Economía del Desarrollo, Antoni Bosh. Caps. 3, 4.
+* Jones, Charles I (2000), Introducción al Crecimiento Económico, Prentice Hall. Caps. 1, 2, 3.
+* Ros, Jaime (2022), La riqueza de las naciones en el siglo XXI. Desarrollo económico, crecimiento e instituciones, FCE. Primera y tercera parte.
+
+### VII. Instituciones.
+* Acemoglu, Daron y James A. Robinson (2012), Why Nations Fail, Profile Books.
+* Jones, Charles I (2000), Introducción al Crecimiento Económico, Prentice Hall. Cap. 7.
+* Ros, Jaime (2022), La riqueza de las naciones en el siglo XXI. Desarrollo económico, crecimiento e instituciones, FCE. Cuarta parte.
 
 
 
