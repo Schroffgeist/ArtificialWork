@@ -61,7 +61,7 @@
 % --- DATE AND TIME ---
 \usepackage[useregional,showdow,calc]{datetime2}
 \usepackage{datetime2-calc}
-\DTMlangsetup[spanish,mexico]{} % Removed monthyearsep option
+\DTMlangsetup[english]{} % Changed to English for template
 
 % --- HEADER AND FOOTER ---
 \usepackage{fancyhdr}
@@ -73,12 +73,12 @@
   \fancyhead[CE]{\textcolor{blue}{\texttt\today.}}
   \fancyhead[LE]{\textcolor{blue}{\small \StudentName}}
   \fancyfoot[RE]{\SubjectFancy}
-  \fancyfoot[LE]{\textcolor{blue}{Cuenta: \StudentId}}
+  \fancyfoot[LE]{\textcolor{blue}{ID: \StudentId}}
   \fancyhead[LO]{\textcolor{blue}{\thepage}}
   \fancyhead[CO]{\textcolor{blue}{\texttt\today.}}
   \fancyhead[RO]{\textcolor{blue}{\small \StudentName}}
   \fancyfoot[LO]{\SubjectFancy}
-  \fancyfoot[RO]{\textcolor{blue}{Cuenta: \StudentId}}
+  \fancyfoot[RO]{\textcolor{blue}{ID: \StudentId}}
   \renewcommand{\headrulewidth}{01pt}
   \renewcommand{\footrulewidth}{01pt}
   \def\headrule{\color{blue} \hrule}
@@ -92,12 +92,12 @@
   \fancyhead[CE]{\textcolor{blue}{\texttt\today.}}
   \fancyhead[RE]{\textcolor{blue}{\small \StudentName}}
   \fancyfoot[LE]{\SubjectFancy}
-  \fancyfoot[RE]{\textcolor{blue}{Cuenta: \StudentId}}
+  \fancyfoot[RE]{\textcolor{blue}{ID: \StudentId}}
   \fancyhead[RO]{\textcolor{blue}{\thepage}}
   \fancyhead[CO]{\textcolor{blue}{\texttt\today.}}
   \fancyhead[LO]{\textcolor{blue}{\small \StudentName}}
   \fancyfoot[RO]{\SubjectFancy}
-  \fancyfoot[LO]{\textcolor{blue}{Cuenta: \StudentId}}
+  \fancyfoot[LO]{\textcolor{blue}{ID: \StudentId}}
   \renewcommand{\headrulewidth}{01pt}
   \renewcommand{\footrulewidth}{01pt}
   \def\headrule{\color{blue} \hrule}
@@ -126,17 +126,17 @@
 % --- TITLE PAGE ---
 \title{\vspace{-21pt} \hspace*{08pt}
 				\begin{minipage}[t][00pt][c]{4.1cm}\hspace*{-15pt}
-					\includegraphics[width=\linewidth]{Escudo-UNAM-Azul}
+					\includegraphics[width=\linewidth]{University-Logo-Blue}
 				\end{minipage}\hfill
 				\begin{minipage}[t][00pt][t]{11cm}
 					\centering \vspace{-34pt}
-					{\large \textbf{Universidad Nacional Autónoma de México.}}\\ \vspace{05pt}
-					{\normalsize \textbf{Facultad de Economía.}\\ \vspace{05pt}
-								División de estudios profesionales.\\ \vspace{-04pt}
-								Licenciatura en Economía.}
+					{\large \textbf{[University Name].}}\\ \vspace{05pt}
+					{\normalsize \textbf{[Faculty/School Name].}\\ \vspace{05pt}
+								[Division Name].\\ \vspace{-04pt}
+								[Degree Program].}
 				\end{minipage}\hfill
 				\begin{minipage}[c][01.7cm][c]{4.1cm}
-					\includegraphics[width=\linewidth]{Economia_escudo-Azul}
+					\includegraphics[width=\linewidth]{Faculty-Logo-Blue}
 				\end{minipage}
 				
 $\-$ \vspace{08cm}	\\
@@ -144,40 +144,40 @@ $\-$ \vspace{08cm}	\\
 				\normalsize \ActivityType\vspace{8cm} \\ \hspace*{08pt}
 				
 				\begin{minipage}[c][03.4cm][t]{07.5cm}
-					{\textbf{Periodo: \Period}}\\
-					{\textbf{Asignatura:}}
+					{\textbf{Period: \Period}}\\
+					{\textbf{Subject:}}
 					\begin{itemize}
 						\item \SubjectName
 						\begin{itemize}
-							\item[\scalebox{0.41}{$\blacksquare$}] Grupo: \GroupId
-							\item[\scalebox{0.41}{$\blacksquare$}] Salón: \Classroom\vspace{00pt}
+							\item[\scalebox{0.41}{$\blacksquare$}] Group: \GroupId
+							\item[\scalebox{0.41}{$\blacksquare$}] Classroom: \Classroom\vspace{00pt}
 							\end{itemize}
 					\end{itemize}
-					{\textbf{Profesor:}}
+					{\textbf{Instructor:}}
 					\begin{itemize}
 						\item Prof. \ProfName
-						\item Adj. \AssistantName
+						\item Asst. \AssistantName
 					\end{itemize}
 				\end{minipage}
 					\hspace{03mm}
 				\begin{minipage}[c][03.4cm][t]{10.0cm}
 				  $\-$\vspace{08pt}\\
-				  {\textbf{Estudiante:}}
+				  {\textbf{Student:}}
 				\begin{itemize}
 				  \item \StudentName
 				    \begin{itemize}
-							\item[\scalebox{0.41}{$\blacksquare$}] Cuenta: \StudentId
-							\item[\scalebox{0.41}{$\blacksquare$}] Correo: \href{mailto:\StudentEmailOne}{\StudentEmailOne}
-							\item[\scalebox{0.41}{$\blacksquare$}] Correo: \href{mailto:\StudentEmailTwo}{\StudentEmailTwo} \vspace{-03pt}
+							\item[\scalebox{0.41}{$\blacksquare$}] ID: \StudentId
+							\item[\scalebox{0.41}{$\blacksquare$}] Email: \href{mailto:\StudentEmailOne}{\StudentEmailOne}
+							\item[\scalebox{0.41}{$\blacksquare$}] Email: \href{mailto:\StudentEmailTwo}{\StudentEmailTwo} \vspace{-03pt}
 							\end{itemize}
 						\vspace{05pt}
 				\end{itemize}
-				{\textbf{Fecha de Entrega:}}
+				{\textbf{Due Date:}}
 				\begin{itemize}
 							\item \DueDate\vspace{17 pt}
 				\end{itemize}
 			\end{minipage}
 			\vspace{-13 pt}
 			
-			\date{\texttt{ \GPSlocation$\-$ a las \DTMcurrenttime h UTC \DTMcurrentzone\space a \today.}}
+			\date{\texttt{ \GPSlocation$\-$ at \DTMcurrenttime h UTC \DTMcurrentzone\space on \today.}}
 }

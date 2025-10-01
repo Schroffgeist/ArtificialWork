@@ -5,7 +5,7 @@ import sys
 # --- Configuration ---
 INPUT_DIR = "input-RawFiles"
 PROMPT_FILE = "prompt.txt"
-GEMINI_MODEL = "gemini-2.5-pro" 
+COPILOT_MODEL = "gpt-5"  # GitHub Copilot uses GPT models & claude Sonnet claude-sonnet-4.5
 
 # --- 1. Check for input directory ---
 if not os.path.isdir(INPUT_DIR):
@@ -40,22 +40,22 @@ except FileNotFoundError:
 files_string = "\n".join(file_paths)
 final_prompt = f"{base_prompt}\n{files_string}"
 
-# --- 5. Build and execute the Gemini CLI command ---
+# --- 5. Build and execute the GitHub Copilot CLI command ---
 command = [
-    "gemini",
+    "copilot",
     "-p",
-    "-y",
     final_prompt,
-    "-m",
-    GEMINI_MODEL
+    "--model",
+    COPILOT_MODEL,
+    "--allow-all-tools"
 ]
 
-print("\n--- Executing Gemini CLI ---")
+print("\n--- Executing GitHub Copilot CLI ---")
 try:
     # Using subprocess.run to execute the command
     result = subprocess.run(command, capture_output=True, text=True, check=True) 
     
-    print("--- Gemini CLI Finished Successfully ---")
+    print("--- GitHub Copilot CLI Finished Successfully ---")
     print("Stdout:")
     print(result.stdout)
     if result.stderr:
@@ -63,11 +63,12 @@ try:
         print(result.stderr)
 
 except FileNotFoundError:
-    print("Error: 'gemini' command not found.")
-    print("Please ensure the Gemini CLI is installed and in your system's PATH.")
+    print("Error: 'gh copilot' command not found.")
+    print("Please ensure the GitHub CLI and Copilot extension are installed and authenticated.")
+    print("Install with: gh extension install github/gh-copilot")
     sys.exit(1)
 except subprocess.CalledProcessError as e:
-    print("--- Gemini CLI Failed ---")
+    print("--- GitHub Copilot CLI Failed ---")
     print(f"Return Code: {e.returncode}")
     print("Stdout:")
     print(e.stdout)

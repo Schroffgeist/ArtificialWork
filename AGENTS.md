@@ -1,10 +1,10 @@
-# Agent for Academic Paper Generation
+# Agent for Academic Paper Generation Template
 
-This project utilizes a headless Gemini instance to automate the generation of academic papers from raw notes and templates.
+This project template utilizes GitHub Copilot CLI to automate the generation of academic papers from raw notes and templates.
 
 ## Role of the Agent
 
-The Gemini agent, when invoked by the `process_inputs.py` script, performs the following key tasks:
+GitHub Copilot CLI, when invoked by the `process_inputs.py` script, performs the following key tasks:
 
 1.  **Input Analysis**: Reads and analyzes content from user-provided raw note files (`input-RawFiles/`).
 2.  **Metadata Extraction**: Identifies and extracts personal information, document metadata, core content, and references from the input files.
@@ -14,10 +14,10 @@ The Gemini agent, when invoked by the `process_inputs.py` script, performs the f
 
 ## Workflow Integration
 
-The Gemini agent is an integral part of the automated workflow:
+GitHub Copilot CLI is an integral part of the automated workflow:
 
--   The `process_inputs.py` script constructs a detailed prompt for the Gemini CLI, including paths to all input files.
--   The Gemini CLI is executed in headless mode, processing the prompt and performing the content generation and file editing tasks.
--   The output of the Gemini agent (modified `template.Rmd` and `Bibliografia.bib`) is then used by the user to manually compile the final PDF using R Markdown.
+-   The `process_inputs.py` script constructs a detailed prompt for GitHub Copilot CLI, including paths to all input files.
+-   GitHub Copilot CLI is executed using `gh copilot chat`, processing the prompt and performing the content generation and file editing tasks.
+-   The output of GitHub Copilot CLI (modified `template.Rmd` and `Bibliografia.bib`) is then used by the user to manually compile the final PDF using R Markdown.
 
-For more details on the overall workflow, refer to the `README.md` and `docs/GEMINI.md` files.
+For more details on the overall workflow, refer to the `README.md` and `docs/COPILOT.md` files.

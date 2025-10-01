@@ -1,0 +1,13 @@
+Student:	Names: [First Name] [Middle Name]. Last Names: [Last Name] [Second Last Name].
+			Email1: student@university.edu
+			Student-ID: 000000000
+
+Period: YYYY-S
+Subject: [Subject Name].
+
+Professor: Dr. [Professor Name].
+Assistant: [Assistant Name].
+Classroom: 000X.
+
+Due Date: DD de Month YYYY, HH:MM am/pm.
+City: [City, Country]
